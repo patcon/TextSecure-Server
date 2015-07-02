@@ -1,0 +1,14 @@
+language: java
+
+env:
+  global:
+    # GITHUB_TOKEN
+  - secure: "IvE/kjWdNST+cgr6AuSqA4UGtWQXgKbbyisNG3P1dMtarvc/N5prdHL3zlMBHYjv1KXdmh0vCQ8ulApvzKKMq7MZ2nsWMvMkWmqN3tB2oLkrOm/wpgW/XCoXQ5iH9pP7h+HJDWSYWhRm2/xksmpF8lGu3GFLvu5wgEKwRNY3pJk="
+
+deploy:
+  provider: releases
+  api-key: "IvE/kjWdNST+cgr6AuSqA4UGtWQXgKbbyisNG3P1dMtarvc/N5prdHL3zlMBHYjv1KXdmh0vCQ8ulApvzKKMq7MZ2nsWMvMkWmqN3tB2oLkrOm/wpgW/XCoXQ5iH9pP7h+HJDWSYWhRm2/xksmpF8lGu3GFLvu5wgEKwRNY3pJk="
+  file: target/TextSecureServer-*.jar
+  file_glob: true
+  on:
+    branch: feature/travis-releases-deploy
