@@ -1,13 +1,9 @@
 language: java
 
-env:
-  global:
-    # GITHUB_TOKEN
-  - secure: "IvE/kjWdNST+cgr6AuSqA4UGtWQXgKbbyisNG3P1dMtarvc/N5prdHL3zlMBHYjv1KXdmh0vCQ8ulApvzKKMq7MZ2nsWMvMkWmqN3tB2oLkrOm/wpgW/XCoXQ5iH9pP7h+HJDWSYWhRm2/xksmpF8lGu3GFLvu5wgEKwRNY3pJk="
-
 deploy:
   provider: releases
-  api-key: "IvE/kjWdNST+cgr6AuSqA4UGtWQXgKbbyisNG3P1dMtarvc/N5prdHL3zlMBHYjv1KXdmh0vCQ8ulApvzKKMq7MZ2nsWMvMkWmqN3tB2oLkrOm/wpgW/XCoXQ5iH9pP7h+HJDWSYWhRm2/xksmpF8lGu3GFLvu5wgEKwRNY3pJk="
+  api-key:
+    secure: Ihk70EOaKrbki1mWJnMpfdKCdplgf8GJciM1ynCsCvYqcVFHpJIzEUluQv7v3Vp+JUwGaSA+D5aT1hlzb3loaKdBkE6GUjJn8+Kc3x7lzhwClQmGKLQ9tGKyFsBL+sd2hF9h4XGaulFFtGHXo4BtDM1n9ojV3wCIBHg0G+3cA6o=
   file: target/TextSecureServer-*.jar
   file_glob: true
   on:
